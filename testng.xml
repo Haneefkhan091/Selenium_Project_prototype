@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="TESTN.Include_and_Exclude_TestNG">
-     
-      <methods>
-		  <!-- it will not execute only this test case-->
-		  <exclude name="Now"></exclude>
-		  <!-- The below will exlude all the test cases start from words starting-->
-		  <exclude name="sign.*"></exclude>
-	  </methods>
-     
-      </class>
-      <class name="TESTN.DummyPractice">
-		  <methods>
-		   <include name="sign"></include>
-		   </methods>
-	  </class>
-	  
+<suite name="Suite" parallel="methods" thread-count="2">
+	<listeners>
+		<listener class-name="TESTN.Listeners3" />
+		<listener class-name="OverallFrameworkHandling.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="TESTN.Include_and_Exclude_TestNG">
 
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+				<methods>
+					<!-- it will not execute only this test case-->
+					<exclude name="Now"></exclude>
+					<!-- The below will exlude all the test cases start from
+					words starting-->
+					<exclude name="sign.*"></exclude>
+				</methods>
+
+			</class>
+			<class name="TESTN.DummyPractice">
+				<methods>
+					<include name="sign"></include>
+				</methods>
+			</class>
+
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

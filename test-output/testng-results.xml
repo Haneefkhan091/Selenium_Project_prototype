@@ -1,172 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-02T16:56:08 PKT" name="Default suite" finished-at="2024-01-02T16:56:09 PKT" duration-ms="159">
+  <suite started-at="2024-01-15T12:42:30 PKT" name="Suite" finished-at="2024-01-15T12:42:43 PKT" duration-ms="13038">
     <groups>
     </groups>
-    <test started-at="2024-01-02T16:56:08 PKT" name="Default test" finished-at="2024-01-02T16:56:09 PKT" duration-ms="159">
-      <class name="TESTN.Parametarization">
-        <test-method signature="testWithDynamicDataProvider(java.lang.String,int)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithDynamicDataProvider" data-provider="dynamicDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="29" status="PASS">
+    <test started-at="2024-01-15T12:42:30 PKT" name="Test" finished-at="2024-01-15T12:42:43 PKT" duration-ms="13038">
+      <class name="OverallFrameworkHandling.access_chrome">
+        <test-method signature="setup(java.lang.String,java.lang.String)[pri:0, instance:OverallFrameworkHandling.access_chrome@41813449]" started-at="2024-01-15T12:42:30 PKT" name="setup" data-provider="loginData" finished-at="2024-01-15T12:42:43 PKT" duration-ms="12484" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RandomString1704196568983]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[41]]>
+                <![CDATA[admin2123]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username : Admin Password : admin1a23] but found [Username : Admin Password : admin123]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username : Admin Password : admin1a23] but found [Username : Admin Password : admin123]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at OverallFrameworkHandling.access_chrome.setup(access_chrome.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWithDynamicDataProvider -->
-        <test-method signature="testWithDynamicDataProvider(java.lang.String,int)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithDynamicDataProvider" data-provider="dynamicDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[RandomString1704196568983]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[76]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithDynamicDataProvider -->
-        <test-method signature="testWithDynamicDataProvider(java.lang.String,int)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithDynamicDataProvider" data-provider="dynamicDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[RandomString1704196568983]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithDynamicDataProvider -->
-        <test-method signature="testWithMixedTypesDataProvider(java.lang.String,int,boolean)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithMixedTypesDataProvider" data-provider="mixedTypesDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Haneef]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[25]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithMixedTypesDataProvider -->
-        <test-method signature="testWithMixedTypesDataProvider(java.lang.String,int,boolean)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithMixedTypesDataProvider" data-provider="mixedTypesDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Arsalan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithMixedTypesDataProvider -->
-        <test-method signature="testWithMixedTypesDataProvider(java.lang.String,int,boolean)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithMixedTypesDataProvider" data-provider="mixedTypesDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Abdul Rahman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[22]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithMixedTypesDataProvider -->
-        <test-method signature="testWithSimpleDataProvider(java.lang.String,java.lang.String)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithSimpleDataProvider" data-provider="simpleDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Haneef ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Khan]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithSimpleDataProvider -->
-        <test-method signature="testWithSimpleDataProvider(java.lang.String,java.lang.String)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithSimpleDataProvider" data-provider="simpleDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Arsalan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bhai]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithSimpleDataProvider -->
-        <test-method signature="testWithSimpleDataProvider(java.lang.String,java.lang.String)[pri:0, instance:TESTN.Parametarization@702657cc]" started-at="2024-01-02T16:56:09 PKT" name="testWithSimpleDataProvider" data-provider="simpleDataProvider" finished-at="2024-01-02T16:56:09 PKT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Abdul Rahman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bhai]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithSimpleDataProvider -->
-      </class> <!-- TESTN.Parametarization -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+      </class> <!-- OverallFrameworkHandling.access_chrome -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

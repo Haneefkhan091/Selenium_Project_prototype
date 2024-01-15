@@ -1,0 +1,4 @@
+12:42:44.036 [main] TRACE org.testng.internal.Graph - [Graph] ================ SORTING
+12:42:44.038 [main] TRACE org.testng.internal.Graph - [Graph] =============== DONE SORTING
+12:42:44.038 [main] TRACE org.testng.internal.Graph - [Graph] ====== SORTED NODES
+12:42:44.038 [main] TRACE org.testng.internal.Graph - [Graph] ====== END SORTED NODES

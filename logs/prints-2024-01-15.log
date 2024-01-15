@@ -1,0 +1,3 @@
+12:42:32.605 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 120.0.6099.109 found in cache
+12:42:32.608 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Codes Orbit\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+12:42:44.035 [main] TRACE org.testng.internal.Graph - [Graph] ADDING NODE access_chrome.setup(java.lang.String,java.lang.String)[pri:0, instance:OverallFrameworkHandling.access_chrome@41813449] 116546474
